@@ -17,8 +17,8 @@ Make sure you have Python 3.10 or higher installed on your machine.
 Clone the repository, create a virtual environment, and install the required dependencies:
 
 ```bash
-# Clone the repository
-git clone [https://github.com/F1nnian/power_predict.git](https://github.com/F1nnian/power_predict.git)
+# Clone the repository via ssh
+git clone git@github.com:F1nnian/power_predict.git
 cd power_predict
 
 # Create a virtual environment (venv)
