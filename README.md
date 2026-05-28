@@ -2,6 +2,8 @@
 
 Group Project "Power Predict" | PS Machine Learning UIBK
 
+Click [here]() to read the report.
+
 ## Getting Started & How to Run (AI-generated)
 
 Follow these steps to set up your local environment, prepare the dataset, and run the Power Predict machine learning pipeline.
@@ -32,7 +34,11 @@ venv\Scripts\activate
 
 # Install required Python packages
 pip install -r requirements.txt
+```
 
+### 3. Running the Pipeline
+
+```bash
 # Step 1: Preprocess the data (handles missing values, scaling, etc.)
 python src/preprocessing.py
 
