@@ -2,7 +2,7 @@
 
 Group Project "Power Predict" | PS Machine Learning UIBK
 
-Click [here]() to read the report.
+Click [here](https://www.overleaf.com/project/6a1863f7475e18bcff2dd52a) to read the report.
 
 ## Getting Started & How to Run (AI-generated)
 
