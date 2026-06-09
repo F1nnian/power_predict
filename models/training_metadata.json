@@ -1,0 +1,8 @@
+{
+    "best_model": "RandomForest_depth_20_small",
+    "best_validation_mae": 1828.1468167059104,
+    "model_path": "models\\final_model.joblib",
+    "results_path": "figures\\model_results.csv",
+    "target_column": "power_consumption",
+    "random_state": 42
+}
