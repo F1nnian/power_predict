@@ -40,7 +40,7 @@ def main():
     print(f"MSE: {mse:.2f}")
     print(f"R2: {r2:.4f}")
 
-    # Plot 1: Model comparison using validation MAE
+    # plot 1 (MAE)
     if os.path.exists(RESULTS_PATH):
         results_df = pd.read_csv(RESULTS_PATH)
 
@@ -55,7 +55,7 @@ def main():
 
         print("Saved figure: figures/model_comparison_mae.png")
 
-    # Plot 2: True values vs predicted values
+    # plot 2 (True vs Predicted)
     plt.figure(figsize=(7, 7))
     plt.scatter(y_val, y_pred, alpha=0.4)
     plt.xlabel("True power consumption")
@@ -67,7 +67,7 @@ def main():
 
     print("Saved figure: figures/true_vs_predicted.png")
 
-    # Plot 3: Residual distribution
+    # plot 3 (Residual distribution)
     residuals = y_val - y_pred
 
     plt.figure(figsize=(8, 6))
@@ -81,7 +81,7 @@ def main():
 
     print("Saved figure: figures/residuals_histogram.png")
 
-    # Save final validation metrics
+    # save final metrics to CSV
     final_metrics = pd.DataFrame([
         {
             "mae": mae,

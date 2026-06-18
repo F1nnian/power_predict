@@ -13,9 +13,6 @@ RANDOM_STATE = 42
 
 
 def find_dataset_path():
-    """
-    Finds the dataset file in the most common project locations.
-    """
 
     possible_paths = [
         os.path.join("data", "powerpredict.csv"),
@@ -37,9 +34,6 @@ def find_dataset_path():
 
 
 def load_dataset():
-    """
-    Loads the Power Predict dataset.
-    """
 
     dataset_path = find_dataset_path()
     df = pd.read_csv(dataset_path)
@@ -51,9 +45,6 @@ def load_dataset():
 
 
 def split_features_target(df):
-    """
-    Separates input features X from the target variable y.
-    """
 
     X = df.drop(columns=[TARGET_COLUMN])
     y = df[TARGET_COLUMN]
@@ -62,9 +53,6 @@ def split_features_target(df):
 
 
 def create_train_validation_split(X, y, test_size=0.2):
-    """
-    Splits the data into training and validation sets.
-    """
 
     return train_test_split(
         X,
@@ -75,9 +63,6 @@ def create_train_validation_split(X, y, test_size=0.2):
 
 
 def get_feature_types(X):
-    """
-    Detects numerical and categorical columns.
-    """
 
     numeric_features = X.select_dtypes(include=["int64", "float64"]).columns.tolist()
     categorical_features = X.select_dtypes(include=["object", "category", "bool"]).columns.tolist()
@@ -86,17 +71,6 @@ def get_feature_types(X):
 
 
 def build_preprocessor(X):
-    """
-    Builds the preprocessing pipeline.
-
-    Numerical columns:
-    - missing values are replaced with the median
-    - values are standardized
-
-    Categorical columns:
-    - missing values are replaced with the most frequent value
-    - categories are converted into numbers using OneHotEncoder
-    """
 
     numeric_features, categorical_features = get_feature_types(X)
 
