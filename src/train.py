@@ -23,9 +23,6 @@ METADATA_PATH = os.path.join("models", "training_metadata.json")
 
 
 def evaluate_predictions(y_true, y_pred):
-    """
-    Computes regression metrics.
-    """
 
     mae = mean_absolute_error(y_true, y_pred)
     mse = mean_squared_error(y_true, y_pred)
