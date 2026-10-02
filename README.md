@@ -4,7 +4,7 @@ Group Project "Power Predict" | PS Machine Learning UIBK
 
 Click [here](https://www.overleaf.com/project/6a1863f7475e18bcff2dd52a) to read the report.
 
-## Getting Started & How to Run (AI-generated)
+## Getting Started & How to Run
 
 Follow these steps to set up your local environment, prepare the dataset, and run the Power Predict machine learning pipeline.
 
@@ -49,7 +49,7 @@ python src/train.py
 python src/evaluate.py
 ```
 
-## File structure (AI-generated)
+## File structure
 
 ```
 power-predict/
